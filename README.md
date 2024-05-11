@@ -99,7 +99,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 * NOTE: Weare going to use SMTP Method for sending email so make sure youn have created App Password for it.
-  Follow the link to create app password: https://github.com/YashJPrajapati/Backend-Developer-Assignment/blob/main/App_Password.md
+  Follow the link to create app password: https://github.com/YashJPrajapati/CodeMonk/blob/main/App_Password.md
 * Navigate to Project root view assigned in your project urlpatterns setting (typically http://127.0.0.1:8000/
 
 * Use your superuser credentials to login.
@@ -163,6 +163,6 @@ Assuming you are running your development server on the default port (8000).
 You should see an interactive API documentation page showing your API endpoints, their methods (GET, POST, etc.), and the parameters they accept. The browsable API documentation allows you to test your API endpoints directly from the browser, making it convenient for both development and exploration.
 
 # API Documentation
-https://github.com/YashJPrajapati/Backend-Developer-Assignment/blob/main/API_Documentaion.md
+https://github.com/YashJPrajapati/CodeMonk/blob/main/API_Documentaion.md
 
 # Screenshots
