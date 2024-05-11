@@ -1,6 +1,6 @@
 # Django Documentaion
 
-# Project Installation
+## Installation sETuP
 
 Make sure you refer to the django version you are using. A quick way to start a new django project is to run the
 following command:
