@@ -44,11 +44,11 @@ following command:
      ```shell
      pip install sqlparse
      ```
-10. tzdata: Library for time zone data.
+ 10. tzdata: Library for time zone data.
      ```shell
      pip install tzdata
      ```
-11. asgiref: ASGI framework reference implementation, required by Django channels.
+ 11. asgiref: ASGI framework reference implementation, required by Django channels.
      ```shell
      pip install asgiref
      ```
