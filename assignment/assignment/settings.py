@@ -15,8 +15,8 @@ from pathlib import Path
 import os
 
 # Define email credentials as settings variables
-EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', 'no.reply.coc.30@gmail.com')
-EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', 'sugm mhzi erfx apnn')
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', 'your_email_address@example.com') #add your email address
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', 'your_app_password') #add your password
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 465
@@ -92,9 +92,9 @@ WSGI_APPLICATION = 'assignment.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'codemonk',
+        'NAME': 'database_name', #change it with you DB name
         'USER': 'postgres',
-        'PASSWORD': 'Q!123456',
+        'PASSWORD': 'database_password',  #change it with your DB Password
         'HOST': 'localhost',  # Or your PostgreSQL server IP address
         'PORT': '5432',       # PostgreSQL default port
     }
