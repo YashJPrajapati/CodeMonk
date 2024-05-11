@@ -5,10 +5,9 @@
 Make sure you refer to the django version you are using. A quick way to start a new django project is to run the
 following command:
 * Create One Folder Name it As CodeMonk as a BaseDirectory
-* Open the Folder in the Address bar(path) cmd --> code . it will open VS Code
+* Open the Folder in the Address bar(path) type cmd --> code . this will open VS Code
 * Open the new terminal Performe the following steps in the terminal:
-*
-  1. Virtual environment: Creating Virtual Environment in Python.
+* 1. Virtual environment: Creating Virtual Environment in Python.
      ```shell
      python -m venv myenv
      ```
@@ -65,8 +64,6 @@ django-admin startproject assignment
 cd assignment
 ```
 
-
-
 * Install  Requirements
 
 ```shell script
@@ -79,7 +76,7 @@ pip install requirements.txt
 python manage.py startproject paragraph
 ```
 
-* Add Books to INSTALLED_APPS in you new Django Project.
+* Add App to INSTALLED_APPS in you new Django Project.
 
 ```python
 INSTALLED_APPS = [
@@ -101,9 +98,10 @@ python manage.py migrate
 ```shell
 python manage.py runserver
 ```
-
+* NOTE: Weare going to use SMTP Method for sending email so make sure youn have created App Password for it.
+  Follow the link to create app password: https://github.com/YashJPrajapati/Backend-Developer-Assignment/blob/main/App_Password.md
 * Navigate to Project root view assigned in your project urlpatterns setting (typically http://127.0.0.1:8000/
-if you followed this installation guide).
+
 * Use your superuser credentials to login.
 
 
@@ -137,11 +135,19 @@ INSTALLED_APPS = [
 
 ```python
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
+from paragraph.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('your_app.urls')),  # Include your app's API URLs
+    path('sign_up/', signup.as_view(), name='signup'),
+    path('sign_in/', signin.as_view(), name='signin'),
+    path('createpara/', ParagraphAPI.as_view(), name='para'),
+    path('createparalist/', Createwithlist.as_view(), name='paralist'),    
+    path('createwithfile/', Createwithfile.as_view(), name='file'),    
+    path('search/', SearchAPI.as_view(), name='search'), 
+    path('modify/', Modifyuser.as_view(), name='modify'), 
+    path('sign_out/', signout.as_view(), name='signout'),
 ]
 ```
 
