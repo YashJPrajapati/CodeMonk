@@ -7,7 +7,8 @@ following command:
 * Create One Folder Name it As CodeMonk as a BaseDirectory
 * Open the Folder in the Address bar(path) cmd --> code . it will open VS Code
 * Open the new terminal Performe the following steps in the terminal:
-* 1. Virtual environment: Creating Virtual Environment in Python.
+*
+  1. Virtual environment: Creating Virtual Environment in Python.
      ```shell
      python -m venv myenv
      ```
@@ -43,11 +44,11 @@ following command:
      ```shell
      pip install sqlparse
      ```
-  10. tzdata: Library for time zone data.
+10. tzdata: Library for time zone data.
      ```shell
      pip install tzdata
      ```
-  11. asgiref: ASGI framework reference implementation, required by Django channels.
+11. asgiref: ASGI framework reference implementation, required by Django channels.
      ```shell
      pip install asgiref
      ```
