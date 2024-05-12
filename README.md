@@ -184,7 +184,7 @@ https://github.com/YashJPrajapati/CodeMonk/blob/main/API_Documentaion.md
 
 * Access the API documentation:
     With the above steps completed, you can now access the API documentation in your browser. Open your web browser and navigate to:
-    URL :   http://127.0.0.1:8000/
+    * URL :   http://127.0.0.1:8000/
 
 Assuming you are running your development server on the default port (8000).
 You should see an interactive API documentation page showing your API endpoints, their methods (GET, POST, etc.), and the parameters they accept. The browsable API documentation allows you to test your API endpoints directly from the browser, making it convenient for both development and exploration.
