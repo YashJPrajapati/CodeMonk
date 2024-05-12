@@ -7,7 +7,13 @@
      django-admin startproject your_projectname
      ```
   3. Move to the directoy by using
+    ```shell
+    cd your_projectname
+    ```
   4. Create a application with a name
+     ```shell
+     python manage.py your_appname
+     ```
   5. Create an virtual Environment so your Main system doen't get affected due to any install for the project
   6. Active the Script of venv drag and drop the Activate.ps1 file from myenv\Scripts\Activate.ps1 or
      ```shell
@@ -178,7 +184,7 @@ https://github.com/YashJPrajapati/CodeMonk/blob/main/API_Documentaion.md
 
 * Access the API documentation:
     With the above steps completed, you can now access the API documentation in your browser. Open your web browser and navigate to:
-URL :   http://127.0.0.1:8000/
+    URL :   http://127.0.0.1:8000/
 
 Assuming you are running your development server on the default port (8000).
 You should see an interactive API documentation page showing your API endpoints, their methods (GET, POST, etc.), and the parameters they accept. The browsable API documentation allows you to test your API endpoints directly from the browser, making it convenient for both development and exploration.
