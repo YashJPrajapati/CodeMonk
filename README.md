@@ -174,6 +174,7 @@ urlpatterns = [
 ```
 
 * Include your API views in the App's Views.py
+* * 
 ** Access the view.py file from the ripository 
           https://github.com/YashJPrajapati/CodeMonk/blob/main/assignment/paragraph/views.py
 
